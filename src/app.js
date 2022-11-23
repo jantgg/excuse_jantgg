@@ -17,10 +17,10 @@ window.onload = function() {
     "while I was praying"
   ];
 
-  let item1 = who[Math.floor(Math.random() * 4)];
-  let item2 = action[Math.floor(Math.random() * 4)];
-  let item3 = what[Math.floor(Math.random() * 3)];
-  let item4 = when[Math.floor(Math.random() * 5)];
+  let item1 = who[Math.floor(Math.random() * who.length)];
+  let item2 = action[Math.floor(Math.random() * action.length)];
+  let item3 = what[Math.floor(Math.random() * what.length)];
+  let item4 = when[Math.floor(Math.random() * when.length)];
   let excuse = item1 + " " + item2 + " " + item3 + " " + item4 + ".";
 
   document.querySelector("#greeting").innerHTML = excuse;
